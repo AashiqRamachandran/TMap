@@ -1,6 +1,6 @@
 import turtle
 from tinder_api_sms import *
-FONT = ("Arial", FONT_SIZE, "normal")
+FONT = ("Arial", 12, "normal")
 t = turtle.Turtle()
 recs = get_recommendations()["results"];
 for person in recs:
