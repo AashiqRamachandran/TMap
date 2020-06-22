@@ -8,7 +8,7 @@ for person in recs:
     person_id = person["_id"];
     person_bio = person["bio"];
     person_distance=person["distance_mi"]
-    t.circle(distance_mi)
+    t.circle(person_distance)
     t.write(person_name, align="center", font=FONT)
     #print(person_bio);
     #print(person_distance)
