@@ -3,7 +3,7 @@ import gmplot
 
 recs = get_recommendations()["results"];
 mymap = gmplot.GoogleMapPlotter(13.0817, 80.2230, 16)
-#mymap.apikey="API GOES HERE"
+mymap.apikey="AIzaSyA-kXbq7gPaNlmCLyTZ09sAO3sD-HcIczQ"
 for person in recs:
     person_name=person["name"];
     person_id = person["_id"];
