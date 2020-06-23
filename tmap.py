@@ -9,6 +9,8 @@ for person in recs:
     person_id = person["_id"];
     person_bio = person["bio"];
     person_distance=person["distance_mi"];
+    if(person_distance>100):
+    	continue
     mymap.circle(13.0695, 80.2318,radius=int(person_distance)*1000)#, color='yellow')
     mymap.draw('tinder_visualization.html')
     print("Name: "+person_name)
